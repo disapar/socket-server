@@ -1,24 +1,10 @@
-// const express = require('express');
-// const { resolve } = require('path');
 
-// const app = express();
-// const port = 3010;
-
-// app.use(express.static('static'));
-
-// app.get('/', (req, res) => {
-//   res.sendFile(resolve(__dirname, 'pages/index.html'));
-// });
-
-// app.listen(port, () => {
-//   console.log(`Example app listening at http://localhost:${port}`);
-// });
 const express = require('express');
 const app = express();
 const http = require('http');
 const server = http.createServer(app);
-const { Server } = require('socket.io');
-const io = new Server(server,{
+const { server } = require('socket.io');
+const io = new SocketServer(server,{
   cors:{
     origin: 'http://localhost:5173/'
   }
