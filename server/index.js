@@ -8,7 +8,7 @@ const path = require('path');
 const app = express();
 let server = http.createServer(app);
 app.use(cors())
-const publicPath = path.resolve(__dirname, './static');
+const publicPath = path.resolve(__dirname, '../static');
 const port = process.env.PORT || 4000;
 
 app.use(express.static(publicPath));
