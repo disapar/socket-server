@@ -6,7 +6,7 @@ const server = http.createServer(app);
 const { server } = require('socket.io');
 const io = new SocketServer(server,{
   cors:{
-    origin: 'http://localhost:5173/'
+    origin: 'https://eclectic-chebakia-28f1f2.netlify.app/'
   }
 });
 
