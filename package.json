@@ -2,11 +2,13 @@
   "name": "express-simple-starter",
   "private": true,
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon server/index.js",
+    "start": "node server/index.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "moment": "^2.29.4",
     "nodemon": "^3.0.2",
     "socket.io": "^4.7.2"
   }
